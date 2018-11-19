@@ -4,7 +4,6 @@
     <view class="recording">
         <navigator url="/pages/play/play?page={{id}}">上次收听到:第{{id}}回{{seconds}}<image class="songPlay" src="{{playStatus ?'../../images/play.png':'../../images/pause.png'}}"></image></navigator>
     </view>
-
    <!--  <view class="userinfo">
         <button open-type="getUserInfo" bindgetuserinfo="onGetUserInfo" class="userinfo-avatar"></button>
         <view>

@@ -112,6 +112,7 @@ Page({
         //     // 设置了 src 之后会自动播放
         //     backgroundAudioManager.src = logs.songUrl
         // } else {
+            
             that.setData({
                 songUrl: songUrl
             });
