@@ -1,12 +1,9 @@
-# 云开发 quickstart
+#  小程序在线听小说
 
-这是云开发的快速启动指引，其中演示了如何上手使用云开发的三大基础能力：
 
-- 数据库：一个既可在小程序前端操作，也能在云函数中读写的 JSON 文档型数据库
-- 文件存储：在小程序前端直接上传/下载云端文件，在云开发控制台可视化管理
-- 云函数：在云端运行的代码，微信私有协议天然鉴权，开发者只需编写业务逻辑代码
 
-## 参考文档
 
-- [云开发文档](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html)
+## API
+
+- (http://177j.jqkan.com:8000/%E7%8E%84%E5%B9%BB%E5%B0%8F%E8%AF%B4/%E6%96%97%E7%A0%B4%E8%8B%8D%E7%A9%B9-%E6%A1%91%E6%A2%93/xx.mp3)
 
