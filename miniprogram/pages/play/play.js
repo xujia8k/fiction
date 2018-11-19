@@ -163,8 +163,8 @@ Page({
                     });
                     //控制音乐播放的进度
                     wx.seekBackgroundAudio({
-                        // position: value * duration / 100,
-                        position: value,
+                        position: value * duration / 100,
+                        // position: value,
                     });
                 }
             }
