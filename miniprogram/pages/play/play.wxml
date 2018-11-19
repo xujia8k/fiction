@@ -1,0 +1,33 @@
+ <view class="main-wrap" style="background-color:#f5f5f5;">
+ <!--歌曲信息-->
+    <view class="songBar">
+      <view class="songName">斗破苍穹</view>
+      <view class="singer">
+        第{{songId}}回
+      </view>
+    </view>
+    <!--旋转图-->
+        <view class="songPic">
+            <image class="img {{ (playStatus || sliderValue>=99) ? 'pause' : ''}}" src="../../images/doupo.jpg" bindtap="bindPlaySong"></image>
+        </view>
+    <!--时间轴-->
+    <view class="songTimeBar" style="margin-top:160px;">
+        <view class="progressBar">
+            <text class="startTime">{{currentTime}}</text>
+            <view class="timeBar">
+                <view class="playTime" style="transform: translateX({{sliderValue}}%)"></view>
+                  <movable-area style="height: 4rpx; width: 100%;">
+                    <movable-view style="top:-5px;height: 14px; width: 14px; background: blue; border-radius:50%;background-color:#fff;" x="{{x}}" y="{{y}}" damping='100'  bindchange="onChange" animation="false"  direction="horizontal" out-of-bounds="false"  inertia="false" friction='100'>
+                    </movable-view>
+                  </movable-area>
+            </view>
+            <text class="totalTime">{{totalTime}}</text>
+        </view>
+    </view>
+    <!--上下播放暂停 控制-->
+    <view class="songControl">
+        <image class="songPrev" src="../../images/prev.png" bindtap="bindPrevSong"></image>
+        <image class="songPlay" src="{{(playStatus || sliderValue>=99)?'../../images/play.png':'../../images/pause.png'}}" bindtap="bindPlaySong"></image>
+        <image class="songNext" src="../../images/next.png" bindtap="bindNextSong"></image>
+    </view>
+</view>

@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<view class="content">
+   <!-- 播放记录 -->
+    <view class="recording">
+        <navigator url="/pages/play/play?page={{id}}">上次收听到:第{{id}}回{{seconds}}<image class="songPlay" src="{{playStatus ?'../../images/play.png':'../../images/pause.png'}}"></image></navigator>
+    </view>
+
+   <!--  <view class="userinfo">
+        <button open-type="getUserInfo" bindgetuserinfo="onGetUserInfo" class="userinfo-avatar"></button>
+        <view>
+            <button class="userinfo-nickname" bindtap="onGetOpenid">斗破苍穹</button>
+        </view>
+    </view> -->
+    <view wx:for="{{series}}" wx:for-item="i" wx:key="y" class="songs_list">
+        <view wx:if="{{i >= 889}}" class="songs_item">
+            <navigator url="/pages/play/play?page={{i+1}}" hover-class="navigator-hover" bindtap="showAudio"> 第{{i+1}}回</navigator>
+            <!-- <navigator url="/pages/play/play?page={{i+1}}" hover-class="navigator-hover" bindtap="showAudio"> 第{{i+1}}回--斗破苍穹-桑梓</navigator> -->
+        </view>
+    </view>
+</view>
